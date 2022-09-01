@@ -1,0 +1,34 @@
+.navbarContainer{
+    width: 50%;
+    background-color: yellow;
+    display: flex;
+    flex-direction: row-reverse;
+    .navListContainer{
+        width: 100%;
+        background-color: red;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+}
+
+//mobile
+@media only screen and (min-width:0px) and (max-width:768px){
+    .navbarContainer{
+        .navListContainer{
+            align-items: center;
+        }
+    }
+}
+//algunas mac
+@media only screen and (min-width:769px) and (max-width:1023px){
+   
+}
+
+
+//LAPTOP
+@media only screen and (min-width:1024px) and (max-width:1440px){
+    .navbarContainer{
+        width: 55%;
+    }
+}

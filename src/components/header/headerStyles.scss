@@ -1,4 +1,52 @@
 .headerContainer{
-    background-color: red;
-    padding: 0 10% 0 12%;
+    background-color: green;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .headerSite{
+        width: 50%;
+        background-color: blue;
+    }
+    .logoSite{
+        padding: 0 0 0 25%;
+    }
+}
+//mobile
+@media only screen and (min-width:0px) and (max-width:768px){
+    .headerContainer{
+        .headerSite{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .logoSite{
+            padding:0;
+        }
+    }
+}
+//algunas mac
+@media only screen and (min-width:769px) and (max-width:1023px){
+    .headerContainer{
+        .headerSite{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .logoSite{
+            padding:0;
+        }
+    }
+}
+//LAPTOP
+@media only screen and (min-width:1024px) and (max-width:1440px){
+    .headerContainer{
+        .headerSite{
+            width: 45%;
+            background-color: blue;
+        }
+        .logoSite{
+            padding: 0 0 0 25%;
+        }
+    }
+    
 }
