@@ -1,15 +1,21 @@
 import React from 'react'
 import './navbarStyles.scss'
+import { NavLink } from 'react-router-dom'
 
 export const Navbar = () => {
+
+  let navbarComponents= ['Servicios', 'Marca', 'Colaboradores', 'Experiencia', 'Contacto']
+
   return (
-        <div class="collapse navbar-collapse navbarContainer" id="navbarNavAltMarkup">
-          <div class="navbar-nav navListContainer">
-            <a class="nav-link active" href="#">Servicios <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="#">Marca</a>
-            <a class="nav-link" href="#">Colaboradores</a>
-            <a class="nav-link" href="#">Experiencia</a>
-            <a class="nav-link">Contacto</a>
+        <div className="collapse navbar-collapse navbarContainer" id="navbarNavAltMarkup">
+          <div className="navbar-nav navListContainer">
+          {navbarComponents.map((navComponent, index)=>(
+            <NavLink 
+            key={index} 
+            to={`/${navComponent}`}>{navComponent}</NavLink>
+          )
+          )
+          }
           </div>
         </div>
   )

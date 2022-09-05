@@ -1,14 +1,13 @@
 .navbarContainer{
     width: 50%;
-    background-color: yellow;
     display: flex;
     flex-direction: row-reverse;
     .navListContainer{
         width: 100%;
-        background-color: red;
         display: flex;
         justify-content: space-evenly;
     }
+    
     
 }
 

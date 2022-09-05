@@ -1,0 +1,11 @@
+body{
+    scroll-behavior: smooth;
+    a{
+        color: white;
+    }
+   a:hover{
+    @extend a;
+    text-decoration: none;
+    box-shadow: none;
+   }
+}

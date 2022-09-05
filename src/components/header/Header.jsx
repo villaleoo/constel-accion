@@ -1,12 +1,13 @@
 import React from 'react'
 import './headerStyles.scss'
 import { Navbar } from './navbar/Navbar'
+import { Link } from 'react-router-dom'
 
 export const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light headerContainer">
       <div className='headerSite'>
-        <div className="navbar-brand logoSite" href="#">CONSTELACCION</div>
+        <div className="navbar-brand logoSite"><Link to={'/'}>CONSTEL•ACCION</Link></div>
         <button className="navbar-toggler" 
                 type="button" 
                 data-toggle="collapse" 
