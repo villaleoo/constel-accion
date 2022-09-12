@@ -13,10 +13,21 @@ body{
    }
    h1{
     color: white;
-    font-size: 35px;
+    font-size: xx-large;
     font-weight: bold;
    }
+   h2{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    } 
+    h3{
+        color: white;
+        font-size: 23px;
+    }  
    nav{ 
+    
+    width: 100%;
     background-image: linear-gradient($claro,$oscuro);
    }
 }
@@ -24,7 +35,7 @@ body{
 @media only screen and (min-width:0px) and (max-width:768px){
  body{
     h1{
-        font-size:xx-large;
+        font-size:x-large;
     }
  }
 }
@@ -35,13 +46,4 @@ body{
             font-size:xx-large;
         }
      }
-}
-//LAPTOP
-@media only screen and (min-width:1024px) and (max-width:1440px){
-    body{
-        h1{
-            font-size:xx-large;
-        }
-     }
-    
 }

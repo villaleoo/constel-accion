@@ -1,0 +1,56 @@
+.homeContainer{
+    width: 100%;
+    height: calc(100vh - 62px);
+    display: flex;
+    align-items: center;
+    background-color: rgb(82, 146, 139);
+    .homeContent{
+        width: 30%;
+        height: 50%;
+        margin:0 0 0 15%;
+        text-align: left;
+        h2{
+            margin: 0 0 7% 0;
+        }
+        span{
+            color: white;
+            font-weight: bold;
+        }
+        h3{
+            margin-bottom: 7%;
+        }
+        button{
+            width: 50%;
+            border-radius: 10px;
+            font-weight: bold;
+            background-color: rgb(25, 94, 84);
+            color: white;
+        }
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:768px){
+  .homeContainer{
+    .homeContent{
+        width: 68%;
+        margin: 0 0 0 7%;
+        h2{
+            font-size: 25px;
+        }
+        span{
+            font-size: large;
+        }
+        h3{
+            font-size: large;
+        }
+        button{
+            width: 80%;
+        }
+    }
+  }
+   }
+
+//algunas mac
+@media only screen and (min-width:769px) and (max-width:1023px){
+       
+}

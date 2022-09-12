@@ -5,14 +5,14 @@ export const GlobalContextProvider = createContext('');
 
 export const GlobalProvider = ({children}) => {
 
-    let navbarComponents= ['Servicios', 'Marca', 'Contacto']
+    let navbarList= ['Servicios', 'Marca', 'Contacto']
 
 
 
 
 
   return (
-    <GlobalContextProvider.Provider value={{}}>
+    <GlobalContextProvider.Provider value={{navbarList,}}>
         {children}
     </GlobalContextProvider.Provider>
   )

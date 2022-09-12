@@ -4,7 +4,7 @@ import "./sectionList.scss"
 
 export const SectionList = () => {
   return (
-    <div>
+    <div className='listContainer'>
         <Home/>
     </div>
   )

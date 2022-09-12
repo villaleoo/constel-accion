@@ -1,5 +1,5 @@
 .navbarContainer{
-    width: 50%;
+    width: 55%;
     display: flex;
     font-size: 20px;
     .navListContainer{
@@ -26,9 +26,3 @@
 }
 
 
-//LAPTOP
-@media only screen and (min-width:1024px) and (max-width:1440px){
-    .navbarContainer{
-        width: 55%;
-    }
-}
