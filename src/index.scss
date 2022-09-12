@@ -1,3 +1,6 @@
+$oscuro: rgb(13, 51, 46);
+$claro: rgb(82, 146, 139);
+
 body{
     scroll-behavior: smooth;
     a{
@@ -8,4 +11,37 @@ body{
     text-decoration: none;
     box-shadow: none;
    }
+   h1{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+   }
+   nav{ 
+    background-image: linear-gradient($claro,$oscuro);
+   }
+}
+
+@media only screen and (min-width:0px) and (max-width:768px){
+ body{
+    h1{
+        font-size:xx-large;
+    }
+ }
+}
+//algunas mac
+@media only screen and (min-width:769px) and (max-width:1023px){
+    body{
+        h1{
+            font-size:xx-large;
+        }
+     }
+}
+//LAPTOP
+@media only screen and (min-width:1024px) and (max-width:1440px){
+    body{
+        h1{
+            font-size:xx-large;
+        }
+     }
+    
 }

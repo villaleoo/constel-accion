@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light headerContainer">
       <div className='headerSite'>
-        <div className="navbar-brand logoSite"><Link to={'/'}>CONSTEL•ACCION</Link></div>
+        <div className="navbar-brand logoSite"><Link to={'/'}> <h1>CONSTEL•LACCION</h1></Link></div>
         <button className="navbar-toggler" 
                 type="button" 
                 data-toggle="collapse" 
