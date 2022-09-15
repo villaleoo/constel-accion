@@ -5,7 +5,7 @@ export const GlobalContextProvider = createContext('');
 
 export const GlobalProvider = ({children}) => {
 
-    let navbarList= ['Servicios', 'Marca', 'Contacto']
+    let navbarList= ['Hacemos', 'Somos', 'Creamos','Contacto']
 
 
 

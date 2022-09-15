@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
-import './serviciosStyles.scss'
+import './hacemosStyles.scss'
 
-export const Servicios = () => {
+export const Hacemos = () => {
     const [buttonChecked, setButtonChecked] = useState('investigacion')
 
     function handleChangeRadio (e) {
@@ -11,15 +11,15 @@ export const Servicios = () => {
 
 
   return (
-    <div>
-        <div>
+    <div className='hacemosContainer'>
+        <div className='hacemosInputs'>
             <label htmlFor=""></label>
             <input 
                 type="radio" 
                 value='investigacion' 
                 name="radioServicios" 
                 id=""
-                checked={buttonChecked == 'investigacion' ? true : false}
+                checked={buttonChecked === 'investigacion' ? true : false}
                 onChange={handleChangeRadio} 
             />
             <label htmlFor=""></label>
@@ -28,7 +28,7 @@ export const Servicios = () => {
                 value ='branding' 
                 name="radioServicios" 
                 id=""
-                checked={buttonChecked == 'branding' ? true : false} 
+                checked={buttonChecked === 'branding' ? true : false} 
                 onChange={handleChangeRadio}  
             />
             <label htmlFor=""></label>
@@ -37,7 +37,7 @@ export const Servicios = () => {
                 value='comunicacion' 
                 name="radioServicios" 
                 id=""
-                checked={buttonChecked == 'comunicacion' ? true : false} 
+                checked={buttonChecked === 'comunicacion' ? true : false} 
                 onChange={handleChangeRadio}  
             />
             <label htmlFor=""></label>
@@ -46,7 +46,7 @@ export const Servicios = () => {
                 value='innovacion'
                 name="radioServicios" 
                 id=""
-                checked={buttonChecked == 'innovacion' ? true : false}
+                checked={buttonChecked === 'innovacion' ? true : false}
                 onChange={handleChangeRadio}   
             />
             <label htmlFor=""></label>
@@ -55,9 +55,35 @@ export const Servicios = () => {
                 value='transformacion' 
                 name="radioServicios" 
                 id=""
-                checked={buttonChecked == 'transformacion' ? true : false}
+                checked={buttonChecked === 'transformacion' ? true : false}
                 onChange={handleChangeRadio}   
             />
+        </div>
+        <div className='hacemosContent'>
+            <h3>HACEMOS</h3>
+        { buttonChecked === 'investigacion' &&
+        <p>esto es investigacion</p>
+
+        }
+
+        { buttonChecked === 'branding' && 
+        <p>esto es branding</p>
+
+        }
+
+        { buttonChecked === 'comunicacion' &&
+        <p>esto es comunicacion</p>
+
+        }
+
+        { buttonChecked === 'innovacion' &&
+        <p>esto es innovacion</p>
+
+        }
+        { buttonChecked === 'transformacion' &&
+        <p>esto es transformacion</p>
+
+        }
         </div>
     </div>
   )

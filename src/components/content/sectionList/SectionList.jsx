@@ -2,14 +2,14 @@ import React from 'react'
 import { Accion } from './accion/Accion'
 import { Home } from './home/Home'
 import "./sectionList.scss"
-import { Servicios } from './servicios/Servicios'
+import { Hacemos } from './hacemos/Hacemos'
 
 export const SectionList = () => {
   return (
     <div className='listContainer'>
         <Home/>
         <Accion/>
-        <Servicios/>
+        <Hacemos/>
     </div>
   )
 }

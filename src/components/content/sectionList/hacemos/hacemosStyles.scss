@@ -1,0 +1,18 @@
+.hacemosContainer{
+    height: 100vh;
+    width: 100%;
+    background-color: lightgreen;
+    display: flex;
+    padding: 7% 20% 5% 15%;
+    .hacemosInputs{
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .hacemosContent{
+        display: flex;
+        flex-direction: column;
+        padding: 15% 0 0 15%;
+    }
+}
