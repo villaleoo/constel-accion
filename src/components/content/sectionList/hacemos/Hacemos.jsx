@@ -5,7 +5,7 @@ import { GlobalContextProvider } from '../../../../context/GlobalProvider'
 import './hacemosStyles.scss'
 
 export const Hacemos = () => {
-    const [buttonChecked, setButtonChecked] = useState('investigacion');
+    const [buttonChecked, setButtonChecked] = useState('Investigacion');
     const {serviceList, serviceContent} = useContext(GlobalContextProvider);
 
 
@@ -33,11 +33,12 @@ export const Hacemos = () => {
                     onChange={handleChangeRadio}
                 
                 />
-                <label key={`label${index}`} htmlFor={`serviceInput${index}`}></label>
-                {
-                    buttonChecked === serviceList[index] &&
-                <label className='labelInputs' key={index}>{serviceList[index]}</label>
-                }
+                <label key={`label${index}`} htmlFor={`serviceInput${index}`}>{
+                    serviceItem === "Comunicacion" ? 
+                    <p id='textInput2'>Comunicación & contenido</p>
+                    :
+                    <p id={`textInput${index}`}>{serviceItem}</p>
+                }</label>
             </div>
                 
             
@@ -52,8 +53,6 @@ export const Hacemos = () => {
                 buttonChecked === serviceContent[index].service && 
                 
                 <>
-                <label key={index}>{serviceContent[index].service
-                }</label>
                     <h2 key={index}>{`${serviceContent[index].title}`}</h2>
                     <p key={index}>
                         {`${serviceContent[index].text}`}
