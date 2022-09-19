@@ -14,9 +14,9 @@ export const Navbar = () => {
           
           <div className="navbar-nav navListContainer">
           {navbarList.map((navComponent, index)=>(
-            <NavLink 
+            <a 
             key={index} 
-            to={`/${navComponent}`}>{navComponent}</NavLink>
+            href={`#seccion${navComponent}`}>{navComponent}</a>
           )
           )
           }

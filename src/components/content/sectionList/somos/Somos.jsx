@@ -12,7 +12,7 @@ export const Somos = () => {
 
 
   return (
-    <div className='somosContainer'>
+    <div className='somosContainer' id='seccionSomos'>
         <div className='somosContent'>
             <h3>SOMOS</h3>
             <div className='textSomos'>

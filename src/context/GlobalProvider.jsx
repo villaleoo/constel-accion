@@ -48,16 +48,35 @@ export const GlobalProvider = ({children}) => {
       }
     ]
 
-
     let somosContent= {
       text:"Somos una red de colaboradores profesionales de distintas disciplinas, con distintos recorridos y formaciones. Creamos un equipo a medida y comprometido,dependiendo de tus necesidades y problemas a resolver.",
       subtitle:"Tenemos experiencia en distintos mercados e industrias",
       keywords:["Alimentos","Bebidas", "Hogar", "Higiene & Belleza", "Banca & Finanzas", "Seguros", "Turismo", "Telecomunicaciones", "Medios de comunicación", "Retail", "Electrodomésticos", "Lujo", "Servicios profesionales", "Textil", "Transporte" ],
-
     }
 
+    let creamosContent= {
+      title:"Creamos",
+      subtitle:"Estrategias con base en la data, la creatividad y las personas para impulsar tu negocio",
+      texts:[
+        "Hoy, y más que nunca, para crear un negocio de valor, debes crear relaciones significativas con las personas (las de fuera, y las de dentro de la compañía).",
+        "Esas relaciones significativas se construyen con micro-experiencias conectadas, no aisladas entre sí. Esas micro-experiencias conectadas necesitan ser parte de un mismo sistema narrativo, de una constelación. Y esa constelación diseñada debe llevarse en la acción: no solo encontrarla y crearla, sino también expresarse, transmitirse y vivirse.",
+        "Por eso, nuestro nombre. Porque colaboramos con start-ups y pymes para que encuentren espacios no explorados, sus propios universos y creen mundos interesantes que conecten su negocio con personas."
+      ]
+    }
+
+    let footerContent={
+      titles:["constel•laccion","Conversemos", "Síguenos" ],
+      subtitles:"Pensamiento estratégico y creativo para pasar a la acción.",
+      contacts:["hola@constellaccion.es", "+12354543"],
+      links:["https://www.linkedin.com"],
+      img:"inserteLogoLinkedin",
+      copy:["2022 © Constel-laccion - Todos los derechos reservados","Politica de cookies 41,23 N • Barcelona & Beyond"]
+    }
+
+    
+
   return (
-    <GlobalContextProvider.Provider value={{navbarList,serviceList, serviceContent, somosContent}}>
+    <GlobalContextProvider.Provider value={{navbarList,serviceList, serviceContent, somosContent, creamosContent,footerContent}}>
         {children}
     </GlobalContextProvider.Provider>
   )

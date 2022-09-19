@@ -17,7 +17,7 @@ export const Hacemos = () => {
    
 
   return (
-    <div className='hacemosContainer'>
+    <div className='hacemosContainer' id='seccionHacemos'>
       
         <div className='hacemosInputs'>
             {   serviceList.map((serviceItem, index)=>

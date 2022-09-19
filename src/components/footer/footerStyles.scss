@@ -1,0 +1,108 @@
+.footerContainer{
+    height: 30vh;
+    width: 100%;
+    padding: 3% 10% 1% 10% ;
+    background-color: rgb(13, 51, 46);
+    .footerContent{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        color: white;
+        .footerMain{
+            width: 100%;
+            height: 90%;
+            display: flex;
+            justify-content: space-around;
+            .footerMark{
+                width: 40%;
+                h1{
+                    font-size: 30px;
+                    text-transform: uppercase;
+                }
+                h4{
+                    font-size: medium; 
+                    width: 65%;
+                }
+            }
+            .footerConversemos{
+                width: 20%;
+                h3{
+                    font-size: x-large;
+                }
+                
+            }
+            .footerSiguenos{
+                width: 20%;
+                h3{
+                    margin-bottom: 10%;
+                }
+                img{
+                    width: 40px;
+                    height: 40px;
+                    margin-left: 5%;
+                }
+            }
+        }
+        .footerCopy{
+            display: flex;
+            height: 10%;
+            width: 100%;
+            justify-content: space-between;
+            font-size: small;
+        }
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:768px){
+   .footerContainer{
+    padding: 0;
+    .footerContent{
+        text-align: center;
+        .footerMain{
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            height: 80%;
+            .footerMark{
+                order: 1;
+                width: 100%;
+                h4{
+                    display: none;
+                }
+            }
+            .footerConversemos{
+                order: 3;
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                h3{
+                    display: none;
+                }
+            }
+            .footerSiguenos{
+                display: flex;
+                justify-content: space-evenly;
+                width: 70%;
+                order:2;
+                align-items: center;
+                h3{
+                    display: none;
+                }
+                
+            }
+        }
+        .footerCopy{
+            height: 20%;
+            p{
+                width: 50%;
+                font-size: smaller;
+            }
+        }
+    }
+   }
+}
+//algunas mac
+@media only screen and (min-width:769px) and (max-width:1023px){
+     
+}

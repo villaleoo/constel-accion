@@ -34,7 +34,7 @@
                         align-items: center;
                         height: 100%;
                         position: absolute;
-                        right:130px;
+                        right:120%;
                         cursor: default;
                         font-weight: bold;
 
@@ -75,8 +75,9 @@
 
 @media only screen and (min-width:0px) and (max-width:768px){
     .hacemosContainer{
-        height: 70vh;
+        height: 90vh;
         padding: 0;
+        padding-top: 80px;
         flex-direction: column;
         .hacemosInputs{
             flex-direction: row;

@@ -5,6 +5,7 @@ import { Accion } from './accion/Accion'
 import { Hacemos } from './hacemos/Hacemos'
 import { Somos } from './somos/Somos'
 import { Creamos } from './creamos/Creamos'
+import { Contacto } from './contacto/Contacto'
 
 export const SectionList = () => {
   return (
@@ -14,6 +15,7 @@ export const SectionList = () => {
         <Hacemos/>
         <Somos/>
         <Creamos/>
+        <Contacto/>
     </div>
   )
 }

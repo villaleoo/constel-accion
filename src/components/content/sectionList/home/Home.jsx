@@ -3,7 +3,7 @@ import "./homeStyles.scss"
 
 export const Home = () => {
   return (
-    <div className='homeContainer'>
+    <div className='homeContainer' id='seccionHome'>
       <div className='homeContent'>
           <h2>Pensamiento<br></br>estratégico y creativo</h2>
           <h3>
