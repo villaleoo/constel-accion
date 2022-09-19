@@ -3,7 +3,7 @@
     width: 100%;
     background-color: rgb(82, 146, 139);
     display: flex;
-    padding: 7% 20% 5% 15%;
+    padding: 7% 15% 5% 20%;
     .hacemosInputs{
         display: flex;
         flex-direction: column;
@@ -50,32 +50,32 @@
             
             
         }
-    
-    }
-    .hacemosContent{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        width: 88%;
-        padding: 15% 0 0 7%;
-        h3{
-            color: lightsalmon;
-            font-weight: bold;
+        .hacemosContent{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 88%;
+            padding: 15% 0 0 7%;
+            h3{
+                color: lightsalmon;
+                font-weight: bold;
+            }
+            p{
+                color: white;
+                font-size: large;
+            }
+            label{
+                position: absolute;
+                top:0;
+            }
+           
         }
-        p{
-            color: white;
-            font-size: large;
-        }
-        label{
-            position: absolute;
-            top:0;
-        }
-       
     }
 
 
 @media only screen and (min-width:0px) and (max-width:768px){
     .hacemosContainer{
+        height: 70vh;
         padding: 0;
         flex-direction: column;
         .hacemosInputs{

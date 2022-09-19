@@ -9,7 +9,6 @@ export const GlobalProvider = ({children}) => {
 
     let serviceList= ['Investigacion', 'Branding', 'Comunicacion', 'Innovacion', 'Transformacion' ];
 
-    
     let serviceContent= [
       {
         service:'Investigacion',
@@ -50,10 +49,15 @@ export const GlobalProvider = ({children}) => {
     ]
 
 
+    let somosContent= {
+      text:"Somos una red de colaboradores profesionales de distintas disciplinas, con distintos recorridos y formaciones. Creamos un equipo a medida y comprometido,dependiendo de tus necesidades y problemas a resolver.",
+      subtitle:"Tenemos experiencia en distintos mercados e industrias",
+      keywords:["Alimentos","Bebidas", "Hogar", "Higiene & Belleza", "Banca & Finanzas", "Seguros", "Turismo", "Telecomunicaciones", "Medios de comunicación", "Retail", "Electrodomésticos", "Lujo", "Servicios profesionales", "Textil", "Transporte" ],
 
+    }
 
   return (
-    <GlobalContextProvider.Provider value={{navbarList,serviceList, serviceContent}}>
+    <GlobalContextProvider.Provider value={{navbarList,serviceList, serviceContent, somosContent}}>
         {children}
     </GlobalContextProvider.Provider>
   )

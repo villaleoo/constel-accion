@@ -1,8 +1,10 @@
 import React from 'react'
-import { Accion } from './accion/Accion'
-import { Home } from './home/Home'
 import "./sectionList.scss"
+import { Home } from './home/Home'
+import { Accion } from './accion/Accion'
 import { Hacemos } from './hacemos/Hacemos'
+import { Somos } from './somos/Somos'
+import { Creamos } from './creamos/Creamos'
 
 export const SectionList = () => {
   return (
@@ -10,6 +12,8 @@ export const SectionList = () => {
         <Home/>
         <Accion/>
         <Hacemos/>
+        <Somos/>
+        <Creamos/>
     </div>
   )
 }
