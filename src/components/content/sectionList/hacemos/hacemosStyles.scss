@@ -1,18 +1,99 @@
 .hacemosContainer{
     height: 100vh;
     width: 100%;
-    background-color: lightgreen;
+    background-color: rgb(82, 146, 139);
     display: flex;
     padding: 7% 20% 5% 15%;
+
     .hacemosInputs{
-        background-color: red;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 30%;
+        background-color: yellow;
+        position: relative;
+        .inputsContainer{
+            background-color: blue;
+            width: 100%;
+            height: 100%;
+            input[type=radio]{
+                display:none;
+            }
+            input[type=radio] + label{
+                cursor: pointer;
+                width: 100%;
+                height: 100%;
+               
+                // background-image: url("https://cdn-icons-png.flaticon.com/512/1016/1016562.png");
+            
+                
+            }
+            input[type=radio] + label:hover{
+                background-color: red;
+                
+            }
+            .labelInputs{
+                position: absolute;
+                right: 100%;
+               
+                background-color: green;
+            }
+        }
+    
     }
     .hacemosContent{
         display: flex;
         flex-direction: column;
-        padding: 15% 0 0 15%;
+        position: relative;
+        padding: 15% 0 0 7%;
+        h3{
+            color: lightsalmon;
+            font-weight: bold;
+        }
+        p{
+            color: white;
+            font-size: large;
+        }
+        label{
+            position: absolute;
+            top:0;
+        }
+       
     }
+}
+
+@media only screen and (min-width:0px) and (max-width:768px){
+    .hacemosContainer{
+        padding: 0;
+        flex-direction: column;
+        .hacemosInputs{
+            flex-direction: row;
+            width: 100%;
+            input[type=radio]{
+                display:none;
+                
+            }
+            input[type=radio] + label{
+                margin:0 2%;
+                width: 10%;
+                height: 80px;
+                font-size: small;
+            }
+            label{
+                position: relative;
+                p{
+                    position: absolute;
+                    background-color: red;
+                    top:100%;
+                    margin-top: 30%;
+                    
+                }
+            }
+        
+        }
+    }
+   }
+   
+@media only screen and (min-width:769px) and (max-width:1023px){
+    
 }
