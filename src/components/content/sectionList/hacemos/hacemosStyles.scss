@@ -43,6 +43,21 @@
                     
 
                 }
+                input[type=radio]:hover + label{
+                    p{
+                        display: flex;
+                        align-items: center;
+                        height: 100%;
+                        position: absolute;
+                        right:120%;
+                        cursor: default;
+                        font-weight: bold;
+
+                    }
+                   
+                    
+
+                }
                
             
 
