@@ -70,20 +70,20 @@ export const Contacto = () => {
     <div className='contactoContainer' id='seccionContacto'>
       <div className=''>
       <h2>Contacto</h2>
-          <div id="carouselExampleIndicators" class="carousel slide"  data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" ></li>
+          <div id="carouselExampleIndicators" className="carousel slide"  data-ride="carousel">
+          <ol className="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active" ></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
           </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
                <p>Quieres saber como podemos colaborar?</p>
             </div>
-            <div class="carousel-item">
+            <div className="carousel-item">
                <p>Hacemos un cafe virtual?</p>
             </div>
-            <div class="carousel-item">
+            <div className="carousel-item">
                <p>Escribenos y cuentanos que necesitas</p>
             </div>
           </div>       

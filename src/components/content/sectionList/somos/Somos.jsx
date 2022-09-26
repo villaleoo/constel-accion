@@ -1,7 +1,9 @@
 import React from 'react'
 import { useContext } from 'react'
 import { GlobalContextProvider } from '../../../../context/GlobalProvider'
+import { Slider } from './slider/Slider'
 import './somosStyles.scss'
+
 
 export const Somos = () => {
 
@@ -18,9 +20,10 @@ export const Somos = () => {
             <div className='textSomos'>
                 <p>{somosContent.text}</p>
             </div>
-            <div className='brandSomos'>
-                <p>brand</p>
-            </div>
+            {/* <div className='brandSomos'> */}
+               <Slider/>
+                
+            {/* </div> */}
             <h4>{somosContent.subtitle}</h4>
             <div className="keywordsSomosContainer">
                 <p>
