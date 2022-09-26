@@ -89,7 +89,7 @@ export const Contacto = () => {
           </div>       
         </div>
       </div>  
-      <div>
+      <div className='formContainer'>
         <form className="d-flex flex-column" onSubmit={ev => {
             ev.preventDefault();
             submit(ev.target)

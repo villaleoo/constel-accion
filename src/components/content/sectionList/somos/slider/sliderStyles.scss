@@ -1,6 +1,6 @@
 .sliderContainer{
     width:100%;
-    height: auto;
+    height: 100%;
     .sliderContent{
         width: 100%;
         .sliderConjuntoItems{
@@ -12,8 +12,8 @@
                 font-size: x-large;
                 
                 padding: 5px 2% 5px 2%;
-               margin-top: 1.5%;
-               color: lightsalmon;
+                margin-top: 1.5%;
+                color: lightsalmon;
                 &:hover{
                     background-color: rgb(13, 51, 46);
                     border-radius: 5px;
@@ -24,7 +24,14 @@
          
         }
     }
+    .carousel-control-prev{
+        opacity: 1;
+    }
+    .carousel-control-next{
+        opacity: 1;
+    }
     button{
+      
         .bgSpan{
             background-color: black;
             border-radius: 100px;
@@ -32,3 +39,36 @@
         }
     }
 }
+
+@media only screen and (min-width:0px) and (max-width:768px){
+   .sliderContainer{
+    padding: 0;
+    .sliderContent{
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        .sliderConjuntoItems{
+            p{
+                font-size: small;
+                padding: 0 2%;
+                text-align: center;
+                
+            }
+        }
+    }
+    button{
+        .bgSpan{
+            padding: 0;
+        }
+    }
+    .carousel-control-prev{
+        margin: 0;
+        padding: 0;
+    }
+   }
+}
+//algunas mac
+@media only screen and (min-width:769px) and (max-width:1023px){
+   
+}
+   

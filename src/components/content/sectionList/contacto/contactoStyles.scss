@@ -37,3 +37,16 @@
     }
     
  }
+
+ @media only screen and (min-width:0px) and (max-width:768px){
+  .formContainer input{
+    width: 30px;
+  }
+  .formContainer select{
+    width: 30px;
+  }
+}
+
+@media only screen and (min-width:769px) and (max-width:1023px){
+
+}
