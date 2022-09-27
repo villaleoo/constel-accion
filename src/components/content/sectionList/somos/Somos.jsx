@@ -20,10 +20,8 @@ export const Somos = () => {
             <div className='textSomos'>
                 <p>{somosContent.text}</p>
             </div>
-            {/* <div className='brandSomos'> */}
                <Slider/>
                 
-            {/* </div> */}
             <h4>{somosContent.subtitle}</h4>
             <div className="keywordsSomosContainer">
                 <p>

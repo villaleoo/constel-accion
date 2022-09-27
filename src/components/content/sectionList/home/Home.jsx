@@ -10,7 +10,7 @@ export const Home = () => {
               <span>¡Es hora de accionar! </span>
                Acompañamos a tu negocio a resolver problemas y aprovechar oportunidades de mejora a través del marketing holístico. 
           </h3>
-          <button className='btn'>Contactanos</button>
+          <a className='btn' href={`#seccionContacto`}>¿Hablamos?</a>
       </div>
     </div>
   )

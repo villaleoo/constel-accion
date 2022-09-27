@@ -2,7 +2,7 @@
     height: 30vh;
     width: 100%;
     padding: 3% 10% 1% 10% ;
-    background-color: rgb(13, 51, 46);
+    background-color:  #014E54;
     .footerContent{
         display: flex;
         flex-direction: column;
@@ -28,6 +28,7 @@
             .footerConversemos{
                 width: 20%;
                 h3{
+                    color: white;
                     font-size: x-large;
                 }
                 
@@ -35,6 +36,7 @@
             .footerSiguenos{
                 width: 20%;
                 h3{
+                    color: white;
                     margin-bottom: 10%;
                 }
                 img{

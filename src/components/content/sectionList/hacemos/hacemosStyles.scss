@@ -1,7 +1,7 @@
 .hacemosContainer{
     height: 100vh;
     width: 100%;
-    background-color: rgb(82, 146, 139);
+    background-color: #014E54;
     display: flex;
     padding: 7% 15% 5% 20%;
     .hacemosInputs{
@@ -11,7 +11,8 @@
         width: 12%;
         .inputsContainer{
             position: relative;
-            background-color: blue;
+            background-image: url("../../../assets/hacemosInactivo.png");
+            background-size: cover;
             border-radius: 100px;
             width: 100%;
             height: 100%;
@@ -29,6 +30,8 @@
                     }
                 }
                 input[type=radio]:checked + label{
+                    background-image: url("../../../assets/hacemosActivo.png");
+                    background-size: cover;
                     p{
                         display: flex;
                         align-items: center;
@@ -37,13 +40,14 @@
                         right:120%;
                         cursor: default;
                         font-weight: bold;
+                        
 
                     }
-                   
-                    
-
                 }
+
                 input[type=radio]:hover + label{
+                    background-image: url("../../../assets/hacemosActivo.png");
+                    background-size: cover;
                     p{
                         display: flex;
                         align-items: center;
@@ -72,8 +76,11 @@
             width: 88%;
             padding: 15% 0 0 7%;
             h3{
-                color: lightsalmon;
+                color: #FA9373;
                 font-weight: bold;
+            }
+            h2{
+                color: white;
             }
             p{
                 color: white;
@@ -130,7 +137,6 @@
             padding: 20% 5% 0 5%;
             text-align: justify;
             h3{
-                color: lightsalmon;
                 font-weight: bold;
                 font-size: large;
             }
