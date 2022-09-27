@@ -1,9 +1,9 @@
 .somosContainer{
-    height: 95vh;
+    height: 100vh;
     width: 100%;
     padding: 5% 12% 5% 12%;
     background-color: white;
-    overflow-x: hidden;
+    
     .somosContent{
         width: 100%;
         height: 100%;
@@ -30,25 +30,29 @@
             font-weight: bold;
         }
         .keywordsSomosContainer{
-            height: 40%;
-            text-align: justify;
-            p{
-                padding-top: 3%;
-                width:100%;
+            width: 100%;
+            height: 30%;
+         
+            .keyContainer{
                 height: 100%;
-                font-weight: bold;
-                color: white;
-                font-size: large;
+                width: 100%;
                 text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
                 span{
+                    color:white;
+                    font-weight: bold;
                     background-color: #FA9373;
-                    margin: 2% 2.5%;
+                    margin:0.5% 1%;
                     padding: 0 25px;
                     border-radius: 5px;
                     text-align: center;
                     cursor: default;
                 }
             }
+            
         }
     }
 }
@@ -56,9 +60,19 @@
 
 @media only screen and (min-width:0px) and (max-width:768px){
     .somosContainer{
-        padding: 0;
+        padding: 0 0 5% 0;
         padding-top: 80px;
         height: 120vh;
+        .keywordsSomosContainer{
+           
+            .keyContainer{
+                
+                span{
+                 font-size: small;
+                }
+            }
+            
+        }
     }
    }
 //algunas mac

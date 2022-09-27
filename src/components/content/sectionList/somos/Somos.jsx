@@ -24,12 +24,12 @@ export const Somos = () => {
                 
             <h4>{somosContent.subtitle}</h4>
             <div className="keywordsSomosContainer">
-                <p>
+                <div className='keyContainer'>
                     {keywords.map((keyword, index)=>
                     <span className='keywordsSomos' key={index}>{keyword} </span>
                     )}
 
-                </p>
+                </div>
             </div>
 
         </div>
