@@ -70,7 +70,7 @@ export const Contacto = () => {
     <div className='contactoContainer' id='seccionContacto'>
       <div className=''>
       <h2>Contacto</h2>
-          <div id="carouselExampleIndicators" className="carousel slide"  data-ride="carousel">
+          <div id="carouselExampleIndicators" className="carousel slide"  data-ride="carousel" interval="2000">
           <ol className="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active" ></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -90,31 +90,32 @@ export const Contacto = () => {
         </div>
       </div>  
       <div className='formContainer'>
-        <form className="d-flex flex-column" onSubmit={ev => {
+        <form className="form" onSubmit={ev => {
             ev.preventDefault();
             submit(ev.target)
         }}>
-          <label for="servicio">Que servicio te interesa?</label>
+          <label for="servicio">Que servicio te interesa? <span>*</span></label>
             <select name="servicio">
+              <option disabled value></option> 
               <option value="investigacion">Investigación</option>
               <option value="branding">Branding</option>
               <option value="comunicacion">Comunicación y contenido</option>
               <option value="innovacion">Innovación</option>
               <option value="transformacion">Transformación</option>
             </select>
-          <label for="nombre">Nombre: </label>
-            <input type='text' name='nombre' placeholder='Nombre' autoComplete='off'>  
+          <label for="nombre">Nombre <span>*</span> </label>
+            <input type='text' name='nombre'  autoComplete='off'>  
             </input>
-            <label for="telefono">Telefono:</label>
-            <input type='text' name='telefono' placeholder='Telefono' autoComplete='off'>  
+            <label for="telefono">Telefono <span>*</span></label>
+            <input type='text' name='telefono'  autoComplete='off'>  
             </input>
-            <label for="email">Email:</label>
-            <input type='text' name='email' placeholder='Email' autoComplete='off'>  
+            <label for="email">Email <span>*</span></label>
+            <input type='text' name='email' autoComplete='off'>  
             </input>
-            <label for="notas">Notas:</label>
-            <input type='text' name='notas' placeholder='Notas' autoComplete='off'>  
+            <label for="notas">Notas</label>
+            <input type='text' name='notas' autoComplete='off'>  
             </input>
-            <button type="submit"> Enviar </button>
+            <button type="submit"> <p>Enviar</p> </button>
         </form>
       </div>
     </div>
