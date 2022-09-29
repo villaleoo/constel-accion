@@ -10,7 +10,6 @@
             
             p{
                 font-size: x-large;
-                
                 padding: 5px 2% 5px 2%;
                 margin-top: 1.5%;
                 color: #FA9373;
@@ -68,7 +67,21 @@
    }
 }
 //algunas mac
-@media only screen and (min-width:769px) and (max-width:1023px){
-   
+@media only screen and (min-width:1024px) and (max-width:1440px){
+    .sliderContainer{
+        padding: 0;
+        .sliderContent{
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            .sliderConjuntoItems{
+                p{
+                    padding: 0 2%;
+                    text-align: center;
+                    
+                }
+            }
+        }
+       }
 }
    

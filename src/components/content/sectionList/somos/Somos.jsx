@@ -16,7 +16,8 @@ export const Somos = () => {
   return (
     <div className='somosContainer' id='seccionSomos'>
         <div className='somosContent'>
-            <h3>SOMOS</h3>
+            <h3>Somos
+            </h3>
             <div className='textSomos'>
                 <p>{somosContent.text}</p>
             </div>

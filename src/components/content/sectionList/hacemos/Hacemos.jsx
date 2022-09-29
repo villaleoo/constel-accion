@@ -46,7 +46,7 @@ export const Hacemos = () => {
             }
         </div>
         <div className='hacemosContent'>
-            <h3>HACEMOS</h3>
+            <h3>Hacemos</h3>
             {
 
                 serviceContent.map((serviceActive, index)=>
