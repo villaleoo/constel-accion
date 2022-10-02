@@ -33,7 +33,7 @@ export const Hacemos = () => {
                     onChange={handleChangeRadio}
                 
                 />
-                <label key={`label${index}`} htmlFor={`serviceInput${index}`}>{
+                <label key={`label${index}`} htmlFor={`serviceInput${index}`} id={`labelInput${index}`}>{
                     serviceItem === "Comunicacion" ? 
                     <p id='textInput2'>Comunicación & contenido</p>
                     :
@@ -46,7 +46,7 @@ export const Hacemos = () => {
             }
         </div>
         <div className='hacemosContent'>
-            <h3>Hacemos</h3>
+            <h3>HACEMOS</h3>
             {
 
                 serviceContent.map((serviceActive, index)=>

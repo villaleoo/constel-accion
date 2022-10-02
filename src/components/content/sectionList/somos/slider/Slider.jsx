@@ -33,8 +33,8 @@ export const Slider = () => {
           <span className="sr-only bgSpan">Previous</span>
         </button>
         <button className="carousel-control-next p-0 m-0 " type="button" data-target="#carouselExampleInterval" data-slide="next">
-          <span className="carousel-control-next-icon  bgSpan " aria-hidden="true"></span>
-          <span className="sr-only bgSpan">Next</span>
+          <span className="carousel-control-next-icon bgSpan " aria-hidden="true"></span>
+          <span className="sr-only bgSpan dark">Next</span>
         </button>
     </div>
   )

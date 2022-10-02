@@ -1,9 +1,11 @@
 import React from 'react'
 import "./homeStyles.scss"
+import imgFondo from '../../../assets/fondoHome.png'
 
 export const Home = () => {
   return (
     <div className='homeContainer' id='seccionHome'>
+      <img src={imgFondo}/>
       <div className='homeContent'>
           <h2>Estrategia & creatividad</h2>
           <h3>

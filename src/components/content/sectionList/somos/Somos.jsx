@@ -16,10 +16,10 @@ export const Somos = () => {
   return (
     <div className='somosContainer' id='seccionSomos'>
         <div className='somosContent'>
-            <h3>Somos
+            <h3>SOMOS
             </h3>
             <div className='textSomos'>
-                <p>{somosContent.text}</p>
+                <p>Una <b>red de colaboradores</b> profesionales de distintas disciplinas, con distintos recorridos y formaciones. Creamos un <b>equipo a medida y comprometido</b>, dependiendo de tus necesidades y problemas a resolver.</p>
             </div>
                <Slider/>
                 

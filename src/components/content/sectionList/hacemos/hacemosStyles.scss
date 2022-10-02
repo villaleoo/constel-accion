@@ -1,37 +1,110 @@
 .hacemosContainer{
-    height: 110vh;
+    height: 100vh;
     width: 100%;
     background-color: #014E54;
     display: flex;
-    padding: 7% 15% 5% 20%;
+    padding: 4% 15% 2% 20%;
     overflow: hidden;
+    background-image: url("../../../assets/conFondoOscuro.png");
+    background-size: cover;
     .hacemosInputs{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 12%;
+        height: 100%;
         .inputsContainer{
             position: relative;
             border-radius: 100px;
-            width: 100px;
-            height: 100px;
+            width: 15vh;
+            height: 15vh;
+            
             input[type=radio]{
                 display:none;
             }
+           
+            #labelInput0{
+                background-image: url("../../../assets/investigacionInactivo.png");
+                &:hover{
+                    background-image: url("../../../assets/investigacionActivo.png");
+                    width: 18vh;
+                    height: 18vh;
+                }
+            }
+            #serviceInput0:checked + label{
+                background-image: url("../../../assets/investigacionActivo.png");
+                width: 18vh;
+                height: 18vh;
+            }
+            #labelInput1{
+                background-image: url("../../../assets/brandingInactivo.png");
+                &:hover{
+                    background-image: url("../../../assets/brandingActivo.png");
+                    width: 18vh;
+                    height: 18vh;
+                   
+                }
+            }
+            #serviceInput1:checked + label{
+                background-image: url("../../../assets/brandingActivo.png");
+                width: 18vh;
+                height: 18vh;
+            }
+            #labelInput2{
+                background-image: url("../../../assets/comunicacionInactivo.png");
+                &:hover{
+                    background-image: url("../../../assets/comunicacionActivo.png");
+                    width: 18vh;
+                    height: 18vh;
+                   
+                }
+            }
+            #serviceInput2:checked + label{
+                background-image: url("../../../assets/comunicacionActivo.png");
+                width: 18vh;
+                height: 18vh;
+            }
+            #labelInput3{
+                background-image: url("../../../assets/innovacionInactivo.png");
+                &:hover{
+                    background-image: url("../../../assets/innovacionActivo.png");
+                    width: 18vh;
+                    height: 18vh;
+                   
+                }
+            }
+            #serviceInput3:checked + label{
+                background-image: url("../../../assets/innovacionActivo.png");
+                width: 18vh;
+                height: 18vh;
+            }
+            #labelInput4{
+                background-image: url("../../../assets/transformacionInactivo.png");
+                &:hover{
+                    background-image: url("../../../assets/transformacionActivo.png");
+                    width: 18vh;
+                    height: 18vh;
+                   
+                }
+            }
+            #serviceInput4:checked + label{
+                background-image: url("../../../assets/transformacionActivo.png");
+                width: 18vh;
+                height: 18vh;
+            }
             input[type=radio] + label{
-                    background-image: url("../../../assets/hacemosInactivo.png");
                     background-size: cover;
                     cursor: pointer;
                     width: 100%;
                     height: 100%;
                     border-radius: 100px;
                     color:white;
+                   
                     p{
                         display: none;
                     }
                 }
                 input[type=radio]:checked + label{
-                    background-image: url("../../../assets/hacemosActivo.png");
                     background-size: cover;
                     p{
                         display: flex;
@@ -41,13 +114,13 @@
                         right:120%;
                         cursor: default;
                         font-weight: bold;
+                        font-size: x-large;
                         
 
                     }
                 }
 
                 input[type=radio]:hover + label{
-                    background-image: url("../../../assets/hacemosActivo.png");
                     background-size: cover;
                     p{
                         display: flex;
@@ -57,6 +130,7 @@
                         right:120%;
                         cursor: default;
                         font-weight: bold;
+                        font-size: x-large;
 
                     }
                    
@@ -74,8 +148,8 @@
             display: flex;
             flex-direction: column;
             position: relative;
-            width: 88%;
-            padding: 15% 0 0 7%;
+            width: 70%;
+            padding: 15% 0 0 12%;
             h3{
                 color: #FA9373;
                 font-weight: bold;
@@ -86,6 +160,8 @@
             p{
                 color: white;
                 font-size: large;
+                margin-top: 5%;
+                width: 100%;
             }
             label{
                 position: absolute;
@@ -102,6 +178,7 @@
         padding: 0;
         padding-top: 80px;
         flex-direction: column;
+        background-image: none;
         .hacemosInputs{
             flex-direction: row;
             width: 100%;
@@ -110,18 +187,75 @@
                 height: 100%;
                 display: flex;
                 justify-content: space-around;
+                width: 10vh;
+                height: 10vh;
+                #labelInput0{
+                    &:hover{
+                        width: 8vh;
+                        height: 8vh;
+                    }
+                }
+                #serviceInput0:checked + label{
+                    width: 8vh;
+                    height: 8vh;
+                }
+                #labelInput1{
+                    &:hover{
+                        width: 8vh;
+                        height: 8vh;
+                       
+                    }
+                }
+                #serviceInput1:checked + label{
+                    width: 8vh;
+                    height: 8vh;
+                }
+                #labelInput2{
+                    &:hover{
+                        width: 8vh;
+                        height: 8vh;
+                       
+                    }
+                }
+                #serviceInput2:checked + label{
+                    width: 8vh;
+                    height: 8vh;
+                }
+                #labelInput3{
+                    &:hover{
+                        width: 8vh;
+                        height: 8vh;
+                       
+                    }
+                }
+                #serviceInput3:checked + label{
+                    width: 8vh;
+                    height: 8vh;
+                }
+                #labelInput4{
+                    &:hover{
+                        width: 8vh;
+                        height: 8vh;
+                       
+                    }
+                }
+                #serviceInput4:checked + label{
+                    width: 8vh;
+                    height: 8vh;
+                }
                 input[type=radio] + label{
-                    background-image: url("../../../assets/hacemosInactivo.png");
                     background-size: cover;
                     height: 60px;
                     width: 60px;
                     #textInput0 , #textInput1, #textInput2, #textInput3{
-                        top:20px;
+                        font-size: large;
+                        top:7vh;
                         left: 10px;
                     }
                     #textInput4{
                         position: absolute;
-                        top: 20px;
+                        font-size: large;
+                        top: 7vh;
                         right: 5px;
                     }
                 }
@@ -139,6 +273,7 @@
             h2{
                 font-size: x-large;
                 margin: 3% 0 8% 0;
+                text-align: left;
             }
             p{
                 font-size: 15px;

@@ -16,7 +16,8 @@
 @media only screen and (min-width:0px) and (max-width:768px){
     .navbarContainer{
         .navListContainer{
-            align-items: center;
+            align-items: flex-start;
+            height: 30vh;
         }
     }
 }

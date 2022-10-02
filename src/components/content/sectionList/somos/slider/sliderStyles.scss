@@ -1,6 +1,6 @@
 .sliderContainer{
-    width:100%;
-    height: 100%;
+    width:70%;
+    height: 20vh;
     display: flex;
     align-items: center;
     .sliderContent{
@@ -45,9 +45,10 @@
 @media only screen and (min-width:0px) and (max-width:768px){
    .sliderContainer{
     padding: 0;
+    width: 100%;
     .sliderContent{
         height: 100%;
-        padding: 0;
+        padding: 0 ;
         margin: 0;
         .sliderConjuntoItems{
             p{
@@ -61,6 +62,7 @@
     button{
         .bgSpan{
             padding: 0;
+            opacity: 0.3;
         }
     }
     .carousel-control-prev{
@@ -72,6 +74,7 @@
 //algunas mac
 @media only screen and (min-width:1024px) and (max-width:1440px){
     .sliderContainer{
+        width: 85%;
         padding: 0;
         .sliderContent{
             height: 100%;

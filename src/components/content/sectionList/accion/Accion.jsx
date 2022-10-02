@@ -1,9 +1,13 @@
 import React from 'react'
 import './accionStyles.scss'
+import manoIzq from '../../../assets/manoIzq.png'
+import manoDer from '../../../assets/manoDer.png'
 
 export const Accion = () => {
   return (
     <div className='accionContainer'>
+      <img className='manoIzq' src={manoIzq} />
+      <img className='manoDer' src={manoDer} />
         <div className='accionContent'>
             <div className='accionTitles'>
                 <h2>Del pensamiento a la acción</h2>

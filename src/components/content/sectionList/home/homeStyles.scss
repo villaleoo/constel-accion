@@ -4,10 +4,19 @@
     display: flex;
     align-items: center;
     background-color: #014E54;
+    background-image: url("../../../assets/conFondoOscuro.png");
+    background-size: cover;
+    img{
+        width: 50%;
+        height: 80%;
+        position: absolute;
+        z-index: 3;
+        right: 5%;
+    }
     .homeContent{
         width: 37%;
         height: 50%;
-        margin:8% 0 0 12%;
+        margin:8% 0 0 15%;
         text-align: left;
         h2{
             color: white;
@@ -15,17 +24,19 @@
         }
         span{
             color: white;
-            font-weight: bold;
+            font-weight:bolder;
+            font-size: x-large;
         }
         h3{
             color: white;
             margin-bottom: 7%;
+            width: 70%;
         }
         
         a{
             display: flex;
             justify-content: center;
-            width: 30%;
+            width: 35%;
             border-radius: 10px;
             font-weight: bold;
             background-color: #FA9373;
@@ -38,6 +49,10 @@
 
 @media only screen and (min-width:0px) and (max-width:768px){
   .homeContainer{
+    background-image: none;
+    img{
+        display: none;
+    }
     .homeContent{
         width: 68%;
         margin: 0 0 0 7%;
@@ -49,15 +64,31 @@
         }
         h3{
             font-size: large;
+            width: 100%;
+            margin-bottom: 20%;
         }
         a{
-            width: 80%;
+            width: 90%;
         }
     }
   }
    }
 
 //algunas mac
-@media only screen and (min-width:769px) and (max-width:1023px){
-       
+@media only screen and (min-width:1024px) and (max-width:1440px){
+    .homeContainer{
+        img{
+            right: 5%;
+        }
+        .homeContent{
+            h3{
+                width: 100%;
+            }
+            a{
+                width: 220px;
+            }
+
+        }
+    }
+    
 }
