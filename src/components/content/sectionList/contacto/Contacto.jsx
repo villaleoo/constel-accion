@@ -1,6 +1,7 @@
 import React from 'react'
 import Swal from 'sweetalert2'
 import './contactoStyles.scss'
+import contacto from "../../../assets/CONTACTO.png";
 
 export const Contacto = () => {
 
@@ -22,7 +23,6 @@ export const Contacto = () => {
           icon: 'error',
           title: 'Oops...',
           text: 'Debe completar todos los campos',
-     
         })
         msgEmpty = true;
       }      
@@ -68,9 +68,11 @@ export const Contacto = () => {
 
   return (
     <div className='contactoContainer' id='seccionContacto'>
-      <div className=''>
-      <h2>Contacto</h2>
+       <img className='telefono' src={contacto}/>
+      <div className='contacto'>
+        <h2>Contacto</h2>
           <div id="carouselExampleIndicators" className="carousel slide"  data-ride="carousel" interval="2000">
+         
           <ol className="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active" ></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -81,14 +83,16 @@ export const Contacto = () => {
                <p>Quieres saber como podemos colaborar?</p>
             </div>
             <div className="carousel-item">
-               <p>Hacemos un cafe virtual?</p>
+               <p>Hacemos un café virtual?</p>
             </div>
             <div className="carousel-item">
-               <p>Escribenos y cuentanos que necesitas</p>
+               <p>Escríbenos y cuéntanos que necesitas</p>
             </div>
           </div>       
         </div>
+         
       </div>  
+     
       <div className='formContainer'>
         <form className="form" onSubmit={ev => {
             ev.preventDefault();
@@ -96,7 +100,9 @@ export const Contacto = () => {
         }}>
           <label for="servicio">Que servicio te interesa? <span>*</span></label>
             <select name="servicio">
-              <option disabled value></option> 
+        
+              <option value="none" selected disabled hidden>  Despliega para ver opciones</option>
+            
               <option value="investigacion">Investigación</option>
               <option value="branding">Branding</option>
               <option value="comunicacion">Comunicación y contenido</option>
