@@ -1,27 +1,24 @@
-
-
 .contactoContainer{
    background-image: url("../../../assets/conFondoClaro.png");
    background-size: cover;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    overflow-x: hidden;
-        h2{
-            font-style: normal;
-            font-weight: 700;
-            color:#FA9373;
-            font-size: 2rem;
+    .contacto{
+      margin-left: 4vw;
+      margin-top: -2vh;
+          h2{
+              font-style: normal;
+              font-weight: 700;
+              color:#FA9373;
+              font-size: 2rem;
+          }
         }
     
 }
 
-.contacto{
-  margin-left: 4vw;
-  margin-top: -2vh;
-}
 
 
 .telefono{
@@ -63,9 +60,7 @@
     
  }
 
- .formContainer{
-
- }
+ 
  .form{
   position: relative;
   width: 37vw;
@@ -107,7 +102,6 @@
     display: flex;
     justify-content: center;
     align-items:center;
-  
     background-color: #FA9373;
     border: none;
     color: #F3F3F3;
@@ -137,23 +131,43 @@
 
  @media only screen and (min-width:0px) and (max-width:768px){
   .contactoContainer{
-    flex-direction: column;
-    align-items: flex-start;
     height: 110vh;
-    padding:45px 0 10% 5%;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    position: relative;
     background-image: none;
-
+    .contacto{
+      padding: 0;
+      position: absolute;
+      top: 12vh;
+      left: 0;
+     #carouselExampleIndicators{
+      .carousel-inner{
+        margin: 0;
+      }
+     }
+    }
+    .formContainer{
+      position: absolute;
+      bottom: 4vh;
+    }
+    .telefono{
+      position:absolute;
+      z-index: 0;
+      width: 22vh;
+      height: 22vh;
+      right: 0;
+      top: 0;
+      bottom: 100%;
+      margin: 0;
+      transform: matrix(-0.61, 0.79, 0.79, 0.61, 0, 0);
+    }
+    button{
+     margin-top: 5%;
+    }
   }
-  .telefono{
-    position:absolute;
-    z-index: 0;
-    width: 22vh;
-    height: 22vh;
-    margin-top: -43vh;
-    left: 40vw;
-    transform: matrix(-0.61, 0.79, 0.79, 0.61, 0, 0);
-  }
-
+  
   .carousel-inner{
     width: 80vw;
   }
