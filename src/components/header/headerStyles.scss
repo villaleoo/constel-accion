@@ -16,6 +16,7 @@
 //mobile
 @media only screen and (min-width:0px) and (max-width:768px){
     .headerContainer{
+       
         .headerSite{
             width: 100%;
             display: flex;
@@ -27,6 +28,7 @@
         }
         .logoSite{
             margin:0;
+           
         }
     }
 }
@@ -43,15 +45,3 @@
         }
     }
 }
-//LAPTOP
-// @media only screen and (min-width:1024px) and (max-width:1440px){
-//     .headerContainer{
-//         .headerSite{
-//             width: 45%;
-//         }
-//         .logoSite{
-//             padding: 0;
-//         }
-//     }
-    
-// }

@@ -5,6 +5,7 @@ import { Hacemos } from './hacemos/Hacemos'
 import { Somos } from './somos/Somos'
 import { Creamos } from './creamos/Creamos'
 import { Contacto } from './contacto/Contacto'
+import './sectionListStyles.scss'
 
 export const SectionList = () => {
   return (
