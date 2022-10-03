@@ -57,11 +57,6 @@ export const GlobalProvider = ({children}) => {
     let creamosContent= {
       title:"CREAMOS",
       subtitle:"Estrategias con base en la data, la creatividad y las personas para impulsar tu negocio",
-      texts:[
-        "Hoy, y más que nunca, para crear un negocio de valor, debes crear relaciones significativas con las personas (las de fuera, y las de dentro de la compañía).",
-        "Esas relaciones significativas se construyen con micro-experiencias conectadas, no aisladas entre sí. Esas micro-experiencias conectadas necesitan ser parte de un mismo sistema narrativo, de una constelación. Y esa constelación diseñada debe llevarse en la acción: no solo encontrarla y crearla, sino también expresarse, transmitirse y vivirse.",
-        "Por eso, nuestro nombre. Porque colaboramos con start-ups y pymes para que encuentren espacios no explorados, sus propios universos y creen mundos interesantes que conecten su negocio con personas."
-      ]
     }
 
     let footerContent={

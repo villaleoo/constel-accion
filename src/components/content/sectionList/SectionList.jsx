@@ -1,5 +1,4 @@
 import React from 'react'
-import "./sectionList.scss"
 import { Home } from './home/Home'
 import { Accion } from './accion/Accion'
 import { Hacemos } from './hacemos/Hacemos'
