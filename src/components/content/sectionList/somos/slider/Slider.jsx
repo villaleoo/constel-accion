@@ -3,7 +3,7 @@ import './sliderStyles.scss'
 
 export const Slider = () => {
 
-    let arrayServicios= ['Investigadores' ,'Diseñadores gráficos','Desarrolladores', 'Copywriting', 'Researchs', 'Diseñadores UX/UI', 'Analistas de datos']
+    let arrayServicios= ['Investigadores' ,'Diseñadores gráficos','Desarrolladores', 'Copywriting', 'Diseñadores UX/UI', 'Analistas de datos']
     
 
 
@@ -21,7 +21,7 @@ export const Slider = () => {
           </div>
           <div className="carousel-item sliderConjuntoItems">
             {
-                arrayServicios.slice(4,7).map((service, index)=>
+                arrayServicios.slice(3,6).map((service, index)=>
                     <p key={index}>{service}</p>
                 )
                
